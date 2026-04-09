@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GewerbesteuerRechner</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #f8f2e7;
+            background:
+                radial-gradient(circle at top left, rgba(43, 125, 99, 0.38), transparent 34%),
+                radial-gradient(circle at bottom right, rgba(9, 57, 44, 0.55), transparent 38%),
+                linear-gradient(160deg, #0e5b47 0%, #081d17 78%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 64px 24px 80px;
+        }
+        .eyebrow {
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-size: 0.82rem;
+            color: #d9b676;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        h1 {
+            font-size: clamp(2.4rem, 5vw, 4.5rem);
+            line-height: 1.02;
+            font-weight: 700;
+            max-width: 720px;
+            margin-bottom: 18px;
+        }
+        .lead {
+            max-width: 700px;
+            font-size: 1.1rem;
+            color: rgba(248, 242, 231, 0.88);
+            margin-bottom: 36px;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 18px;
+            margin: 42px 0 54px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(217, 182, 118, 0.18);
+            border-radius: 22px;
+            padding: 24px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+        }
+        .card h2 {
+            font-size: 1.05rem;
+            margin-bottom: 10px;
+            color: #f8f2e7;
+        }
+        .card p {
+            color: rgba(248, 242, 231, 0.78);
+            font-size: 0.96rem;
+        }
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-top: 26px;
+        }
+        .button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 180px;
+            padding: 14px 20px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.15s ease, opacity 0.15s ease;
+        }
+        .button:hover {
+            transform: translateY(-1px);
+            opacity: 0.96;
+        }
+        .button-primary {
+            background: #d9b676;
+            color: #10251f;
+        }
+        .button-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: #f8f2e7;
+            border: 1px solid rgba(248, 242, 231, 0.18);
+        }
+        .footer {
+            margin-top: 60px;
+            color: rgba(248, 242, 231, 0.62);
+            font-size: 0.92rem;
+        }
+        .footer a {
+            color: #f8f2e7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="eyebrow">GewerbesteuerRechner</div>
+        <h1>Gewerbesteuer klar einschätzen. Hebesätze transparent vergleichen.</h1>
+        <p class="lead">
+            GewerbesteuerRechner ist eine fokussierte iPhone- und iPad-App für Unternehmer,
+            Selbstständige und Berater in Deutschland. Die App hilft dabei, Gewerbesteuer,
+            §35 EStG, Hebesatz-Vergleiche und Standortfragen schneller und nachvollziehbarer
+            zu prüfen.
+        </p>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2>716 Gemeinden</h2>
+                <p>Kommunale Hebesätze mit Quellenhinweis und Standangabe direkt in der App.</p>
+            </div>
+            <div class="card">
+                <h2>Verständliche Ergebnisse</h2>
+                <p>Klare Aufschlüsselungen statt oberflächlicher Schnellrechner.</p>
+            </div>
+            <div class="card">
+                <h2>Premium mit Mehrwert</h2>
+                <p>PDF-Export, mehr Vergleiche, Standort-Analyse und keine Werbung.</p>
+            </div>
+        </div>
+
+        <div class="button-row">
+            <a class="button button-primary" href="./privacy.html">Datenschutz</a>
+            <a class="button button-secondary" href="./support.html">Support</a>
+            <a class="button button-secondary" href="./terms.html">Nutzungsbedingungen</a>
+        </div>
+
+        <div class="footer">
+            <p>Kontakt: <a href="mailto:ivan@cosmicproduction.hr">ivan@cosmicproduction.hr</a></p>
+            <p>&copy; 2026 SoftSplit d.o.o. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
